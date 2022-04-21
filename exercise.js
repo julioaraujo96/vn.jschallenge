@@ -36,17 +36,18 @@ for (let i = 1; i <= endRange; i++) {
 // want to print the first 500 numbers, ...).
 
 const testerOK =  (input, expectation) => {
-    return `${visualNuts (input) === expectation ? 'PASSED' : 'FAILED'}`;
-  }
+    return `${visualNuts (input) === expectation ? 'PASSED' : 'FAILED'}  \t| input ${input} | expecting ${expectation} | got: ${visualNuts(input)}`
+}
   
-  console.log(`##### TESTING #####`);
-  console.log(`${testerOK(3, 'Visual')} | input 3 | expecting Visual | got: ${visualNuts(3)}`);
-  console.log(`${testerOK(2496, 'Visual')} | input 3 | expecting Visual | got: ${visualNuts(2946)}`);
-  console.log(`${testerOK(5, 'Nuts')} | input 5 | expecting Nuts | got: ${visualNuts(5)}`);
-  console.log(`${testerOK(5600, 'Nuts')} | input 5 | expecting Nuts | got: ${visualNuts(5600)}`);
-  console.log(`${testerOK(15, 'Visual Nuts')} | input 15 | expecting Visual Nuts | got: ${visualNuts(15)}`);
-  console.log(`${testerOK(6000, 'Visual Nuts')} | input 6000 | expecting Visual Nuts | got: ${visualNuts(6000)}`);
-  console.log(`${testerOK(4, 4)} | input 4 | expecting 4 | got: ${visualNuts(4)}`);
+console.log(`##### TESTING #####`)
+console.log(`test cases: 3, 5, 15, 4, 6000`)
+console.table(`${testerOK(3, 'Visual')}`)
+console.table(`${testerOK(2946, 'Visual')}`)
+console.table(`${testerOK(5, 'Nuts')}`)
+console.table(`${testerOK(5600, 'Nuts')}`)
+console.table(`${testerOK(15, 'Visual Nuts')}`)
+console.table(`${testerOK(6000, 'Visual Nuts')}`)
+console.table(`${testerOK(4, 4)}`)
 
 /* 
 So, to test full code coverage. I would need to test all situations. So i need a number which matches each requirement.
