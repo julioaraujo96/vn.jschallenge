@@ -27,10 +27,6 @@ for (let i = 1; i <= endRange; i++) {
     console.log(visualNuts(i));
 }
 
-for (let i = 1; i <= endRange; i++) {
-    visualNuts(i);
-}
-
 // How will you keep this code safe from bugs? Show how you would guarantee that this code
 // keeps working when developers start making small feature adjustments. (Maybe we would
 // want to print the first 500 numbers, ...).
