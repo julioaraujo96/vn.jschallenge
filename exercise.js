@@ -10,21 +10,21 @@
 const endRange = 100;
 
 const visualNuts = (i) => {
-    let answer = ''
+    let answer = '';
     if( i % 15 === 0) {
-        answer = 'Visual Nuts'
+        answer = 'Visual Nuts';
     }else if( i % 5 === 0){
-        answer = 'Nuts'
+        answer = 'Nuts';
     }else if (i % 3 === 0){
-        answer = 'Visual'
+        answer = 'Visual';
     } else {
-        answer = i
+        answer = i;
     }
-  return answer
+  return answer;
 }
 
 for (let i = 1; i <= endRange; i++) {
-    console.log(visualNuts(i))
+    console.log(visualNuts(i));
 }
 
 for (let i = 1; i <= endRange; i++) {
@@ -36,15 +36,15 @@ for (let i = 1; i <= endRange; i++) {
 // want to print the first 500 numbers, ...).
 
 const testerOK =  (input, expectation) => {
-    return `${visualNuts (input) === expectation ? 'PASSED' : 'FAILED'}`
+    return `${visualNuts (input) === expectation ? 'PASSED' : 'FAILED'}`;
   }
   
-  console.log(`##### TESTING #####`)
-  console.log(`test cases: 3, 5, 15, 4`)
-  console.log(`${testerOK(3, 'Visual')} | input 3 | expecting Visual | got: ${visualNuts(3)}`)
-  console.log(`${testerOK(5, 'Nuts')} | input 5 | expecting Nuts | got: ${visualNuts(5)}`)
-  console.log(`${testerOK(15, 'Visual Nuts')} | input 15 | expecting Visual Nuts | got: ${visualNuts(15)}`)
-  console.log(`${testerOK(4, 4)} | input 4 | expecting 4 | got: ${visualNuts(4)}`)
+  console.log(`##### TESTING #####`);
+  console.log(`test cases: 3, 5, 15, 4`);
+  console.log(`${testerOK(3, 'Visual')} | input 3 | expecting Visual | got: ${visualNuts(3)}`);
+  console.log(`${testerOK(5, 'Nuts')} | input 5 | expecting Nuts | got: ${visualNuts(5)}`);
+  console.log(`${testerOK(15, 'Visual Nuts')} | input 15 | expecting Visual Nuts | got: ${visualNuts(15)}`);
+  console.log(`${testerOK(4, 4)} | input 4 | expecting 4 | got: ${visualNuts(4)}`);
 
 /* 
 So, to test full code coverage. I would need to test all situations. So i need a number which matches each requirement.
