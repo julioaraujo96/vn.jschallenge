@@ -7,24 +7,22 @@
 //If the number is divisible by 5, do not print the number, but print 'Nuts'. And for
 // all numbers divisible by both (eg: the number 15) the same, but print 'Visual Nuts'.
 
-const divBy3 = "Visual";
-const divBy5 = "Nuts";
 const endRange = 100;
 
-const validarNumero = (i) => {
+const visualNuts = (i) => {
     if( i % 5 === 0 && i % 3 === 0) {
-        console.log(`${divBy3} ${divBy5}`)
+        console.log('Visual Nuts')
     }else if( i % 5 === 0){
-        console.log(divBy5)
+        console.log('Nuts')
     }else if (i % 3 === 0){
-        console.log(divBy3)
+        console.log('Visual')
     } else {
         console.log(i);
     } 
 }
 
 for (let i = 1; i <= endRange; i++) {
-    validarNumero(i);
+    visualNuts(i);
 }
 
 // How will you keep this code safe from bugs? Show how you would guarantee that this code
