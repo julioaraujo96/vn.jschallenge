@@ -9,6 +9,7 @@
 
 const divBy3 = "Visual";
 const divBy5 = "Nuts";
+const endRange = 100;
 
 const validarNumero = (i) => {
     if( i % 5 === 0 && i % 3 === 0) {
@@ -22,7 +23,7 @@ const validarNumero = (i) => {
     } 
 }
 
-for (let i = 1; i <= 500; i++) {
+for (let i = 1; i <= endRange; i++) {
     validarNumero(i);
 }
 
