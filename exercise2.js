@@ -21,7 +21,7 @@ const countries = [
     country:"ES",
     languages: ["es"]
     }
-]
+];
 
 
 // Write a function in javascript that:
@@ -49,7 +49,7 @@ const getCountryWithMostLangs = (countryList) => {
   
       return 0;
     });
-    return countryList.at(-1).country
+    return countryList.at(-1).country;
   };
 
 const getGermanSpeakingLangWithMostOfficialLangs = (germanSpeakingCountries) => {
@@ -57,7 +57,7 @@ const getGermanSpeakingLangWithMostOfficialLangs = (germanSpeakingCountries) => 
   };
 
 
-console.log(`The german speaking country with most official languages is: ${getCountryWithMostLangs(germanSpeakingCountries)}`)
+console.log(`The german speaking country with most official languages is: ${getCountryWithMostLangs(germanSpeakingCountries)}`);
 
 // (de). - that counts all the official languages spoken in the listed countries.
     const getCountOfficialLangsEachCountry = (countries) => {
@@ -70,14 +70,14 @@ getCountOfficialLangsEachCountry(countries);
 //Not sure if you wanted the total of all the languages so here it goes:
 
 const getTotalLangsCount = countries.reduce((count, current) => {
-    console.log(current.languages.length)
+    console.log(current.languages.length);
     return count + current.languages.length;
   }, 0);
 
-console.log({getTotalLangsCount})
+console.log({getTotalLangsCount});
 
 // - to find the country with the highest number of official languages.
-console.log(`Country with most official languages: ${getCountryWithMostLangs(countries)}`)
+console.log(`Country with most official languages: ${getCountryWithMostLangs(countries)}`);
 
 // - to find the most common official language(s), of all countries
 
