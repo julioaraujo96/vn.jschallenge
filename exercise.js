@@ -40,7 +40,6 @@ const testerOK =  (input, expectation) => {
   }
   
   console.log(`##### TESTING #####`);
-  console.log(`test cases: 3, 5, 15, 4`);
   console.log(`${testerOK(3, 'Visual')} | input 3 | expecting Visual | got: ${visualNuts(3)}`);
   console.log(`${testerOK(2496, 'Visual')} | input 3 | expecting Visual | got: ${visualNuts(2946)}`);
   console.log(`${testerOK(5, 'Nuts')} | input 5 | expecting Nuts | got: ${visualNuts(5)}`);
